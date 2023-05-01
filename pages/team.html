@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buggycoder</title>
+    <link rel="stylesheet" href="/styles/team.css" />
+    <link
+      rel="icon"
+      href="data:image/png;base64,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"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <img
+            src="data:image/png;base64,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"
+            class="logo"
+            alt="logo"
+          />
+        </li>
+        <a href="/index.html"><li>Home</li></a>
+        <a href="/pages/service.html"> <li>Service</li></a>
+        <a href="/pages/team.html"> <li class="active">Team</li></a>
+        <a href="/pages/contact.html"><li>Contact</li></a>
+      </ul>
+    </nav>
+    <header>
+      <h1 class="heading">Our Team</h1>
+    </header>
+    <div class="cards">
+      <div class="card">
+        <img
+          src="https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="person1"
+        />
+        <div class="details">
+          <span class="name">Jack</span>
+          <span class="title"> Fullstack Developer</span>
+          <span class="skill">MERN Stack</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://images.pexels.com/photos/3768911/pexels-photo-3768911.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="person2"
+        />
+        <div class="details">
+          <span class="name">Juliet</span>
+          <span class="title">UI/UX Designer</span>
+          <span class="skill">Figma</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="person3"
+        />
+        <div class="details">
+          <span class="name">Katherine</span>
+          <span class="title">FrontEnd Developer</span>
+          <span class="skill">React</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://images.pexels.com/photos/3345882/pexels-photo-3345882.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="person4"
+        />
+        <div class="details">
+          <span class="name">Rodri</span>
+          <span class="title">Backend Developer</span>
+          <span class="skill">Node</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://images.pexels.com/photos/4050349/pexels-photo-4050349.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="person5"
+        />
+        <div class="details">
+          <span class="name">Elizabeth</span>
+          <span class="title">Content Writer</span>
+          <span class="skill">Microsoft Word</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://images.pexels.com/photos/3379933/pexels-photo-3379933.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="person6"
+        />
+        <div class="details">
+          <span class="name">Kevin</span>
+          <span class="title">Video Editor</span>
+          <span class="skill">Adobe Photoshop</span>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <span>Social Media</span>
+      <ul>
+        <li>Instagram</li>
+        <li>Facebook</li>
+        <li>Whatsapp</li>
+        <li>Youtube</li>
+      </ul>
+    </footer>
+  </body>
+</html>

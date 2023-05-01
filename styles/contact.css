@@ -1,0 +1,646 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@600&display=swap");
+
+:root {
+  --primary: rgb(16, 16, 16);
+  --content: white;
+  --nav: rgb(0, 0, 0);
+  --footer: black;
+  --formColor: rgb(79, 79, 79);
+  --shadow: rgb(75, 75, 75);
+}
+
+/* body */
+
+body {
+  background-color: var(--primary);
+  color: var(--content);
+  height: auto;
+}
+
+/* Navbar */
+nav {
+  background-color: var(--nav);
+  color: white;
+  padding: 10px;
+  width: 100%;
+}
+
+nav .logo {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  vertical-align: middle;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: var(--content);
+}
+
+nav li {
+  display: inline;
+  margin: 40px;
+}
+
+.active {
+  background-color: rgb(38, 38, 38);
+  padding: 5px;
+}
+
+/* Footer */
+footer {
+  background-color: var(--footer);
+  color: white;
+  padding: 10px;
+  margin-top: 2rem;
+  width: 100%;
+}
+footer span {
+  font-weight: 800;
+  font-size: 30px;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer li {
+  display: inline;
+  margin: 20px;
+}
+
+/* header */
+header .heading {
+  color: var(--content);
+  font-size: 40px;
+  font-family: "Prompt", sans-serif;
+  text-shadow: 4px 1px 2px var(--shadow);
+  letter-spacing: 4px;
+  margin-top: 40px;
+  margin-left: 4rem;
+}
+
+/* form */
+
+fieldset {
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+fieldset form {
+  background-color: var(--formColor);
+  padding: 3rem;
+  border-radius: 10px;
+}
+
+fieldset form .form-content {
+  color: var(--content);
+  font-size: 20px;
+}
+
+fieldset form input,
+fieldset form select {
+  border-radius: 5px;
+  border: none;
+  height: 25px;
+}
+
+fieldset form .form-button {
+  padding: 7px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 320px) {
+  nav {
+    background-color: var(--nav);
+    color: white;
+    padding: 10px;
+    width: 100%;
+  }
+
+  nav .logo {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    vertical-align: middle;
+    margin-left: 0rem;
+  }
+
+  nav ul {
+    list-style-type: none;
+  }
+
+  nav ul a {
+    text-decoration: none;
+    color: var(--content);
+  }
+
+  nav li {
+    display: block;
+    margin-left: -40px;
+  }
+
+  .active {
+    background-color: rgb(38, 38, 38);
+    padding: 5px;
+  }
+
+  /* header */
+  header .heading {
+    color: var(--content);
+    font-size: 40px;
+    font-family: "Prompt", sans-serif;
+    text-shadow: 4px 1px 2px var(--shadow);
+    letter-spacing: 3px;
+    margin-top: 40px;
+    margin-left: 4rem;
+  }
+
+  /* form */
+
+  fieldset {
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+
+  fieldset form {
+    background-color: var(--formColor);
+    padding: 3rem;
+    border-radius: 10px;
+  }
+
+  fieldset form .form-content {
+    color: var(--content);
+    font-size: 20px;
+  }
+
+  fieldset form input,
+  fieldset form select {
+    border-radius: 5px;
+    border: none;
+    height: 25px;
+  }
+
+  fieldset form .form-button {
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+  }
+
+  /* Footer */
+  footer {
+    background-color: var(--footer);
+    color: white;
+    padding: 10px;
+    width: 100%;
+  }
+  footer span {
+    font-weight: 800;
+    font-size: 30px;
+  }
+
+  footer ul {
+    list-style-type: none;
+  }
+
+  footer li {
+    display: inline;
+    margin: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    background-color: var(--nav);
+    color: white;
+    padding: 10px;
+    width: 100%;
+  }
+
+  nav .logo {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    vertical-align: middle;
+    margin-left: -2.5rem;
+  }
+
+  nav ul {
+    list-style-type: none;
+  }
+
+  nav ul a {
+    text-decoration: none;
+    color: var(--content);
+  }
+
+  nav li {
+    display: inline;
+    margin: 10px;
+  }
+
+  .active {
+    background-color: rgb(38, 38, 38);
+    padding: 5px;
+  }
+
+  /* header */
+  header .heading {
+    color: var(--content);
+    font-size: 40px;
+    font-family: "Prompt", sans-serif;
+    text-shadow: 4px 1px 2px var(--shadow);
+    letter-spacing: 3px;
+    margin-top: 40px;
+    margin-left: 4rem;
+  }
+
+  /* form */
+
+  fieldset {
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+
+  fieldset form {
+    background-color: var(--formColor);
+    padding: 3rem;
+    border-radius: 10px;
+  }
+
+  fieldset form .form-content {
+    color: var(--content);
+    font-size: 20px;
+  }
+
+  fieldset form input,
+  fieldset form select {
+    border-radius: 5px;
+    border: none;
+    height: 25px;
+  }
+
+  fieldset form .form-button {
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+  }
+
+  /* Footer */
+  footer {
+    background-color: var(--footer);
+    color: white;
+    padding: 10px;
+    width: 100%;
+  }
+  footer span {
+    font-weight: 800;
+    font-size: 30px;
+  }
+
+  footer ul {
+    list-style-type: none;
+  }
+
+  footer li {
+    display: inline;
+    margin: 20px;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  nav {
+    background-color: var(--nav);
+    color: white;
+    padding: 10px;
+    width: 100%;
+  }
+
+  nav .logo {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-left: -2.5rem;
+  }
+
+  nav ul {
+    list-style-type: none;
+  }
+
+  nav ul a {
+    text-decoration: none;
+    color: var(--content);
+  }
+
+  nav li {
+    display: inline;
+    margin: 2px;
+  }
+
+  .active {
+    background-color: rgb(38, 38, 38);
+    padding: 5px;
+  }
+
+  /* header */
+  header .heading {
+    color: var(--content);
+    font-size: 40px;
+    font-family: "Prompt", sans-serif;
+    text-shadow: 4px 1px 2px var(--shadow);
+    letter-spacing: 3px;
+    margin-top: 40px;
+    margin-left: 4rem;
+  }
+
+  /* form */
+
+  fieldset {
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+
+  fieldset form {
+    background-color: var(--formColor);
+    padding: 3rem;
+    border-radius: 10px;
+    width: 200px;
+  }
+
+  fieldset form .form-content {
+    color: var(--content);
+    font-size: 20px;
+  }
+
+  fieldset form input,
+  fieldset form select {
+    border-radius: 5px;
+    border: none;
+    height: 25px;
+  }
+
+  fieldset form .form-button {
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+  }
+
+  /* Footer */
+  footer {
+    background-color: var(--footer);
+    color: white;
+    padding: 10px;
+    width: 100%;
+  }
+  footer span {
+    font-weight: 800;
+    font-size: 30px;
+  }
+
+  footer ul {
+    list-style-type: none;
+  }
+
+  footer li {
+    display: inline;
+    margin: 20px;
+  }
+}
+
+@media only screen and (max-width: 441px) {
+  nav {
+    background-color: var(--nav);
+    color: white;
+    padding: 10px;
+    width: 100%;
+  }
+
+  nav .logo {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-left: -2.5rem;
+  }
+
+  nav ul {
+    list-style-type: none;
+  }
+
+  nav ul a {
+    text-decoration: none;
+    color: var(--content);
+  }
+
+  nav li {
+    display: inline;
+    margin: 3px;
+  }
+
+  .active {
+    background-color: rgb(38, 38, 38);
+    padding: 5px;
+  }
+
+  /* header */
+  header .heading {
+    color: var(--content);
+    font-size: 40px;
+    font-family: "Prompt", sans-serif;
+    text-shadow: 4px 1px 2px var(--shadow);
+    letter-spacing: 3px;
+    margin-top: 40px;
+    margin-left: 4rem;
+  }
+
+  /* form */
+
+  fieldset {
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+
+  fieldset form {
+    background-color: var(--formColor);
+    padding: 3rem;
+    border-radius: 10px;
+    width: 200px;
+  }
+
+  fieldset form .form-content {
+    color: var(--content);
+    font-size: 20px;
+  }
+
+  fieldset form input,
+  fieldset form select {
+    border-radius: 5px;
+    border: none;
+    height: 25px;
+  }
+
+  fieldset form .form-button {
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+  }
+
+  /* Footer */
+  footer {
+    background-color: var(--footer);
+    color: white;
+    padding: 10px;
+    width: 100%;
+  }
+  footer span {
+    font-weight: 800;
+    font-size: 30px;
+  }
+
+  footer ul {
+    list-style-type: none;
+  }
+
+  footer li {
+    display: inline;
+    margin: 20px;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  nav {
+    background-color: var(--nav);
+    color: white;
+    padding: 10px;
+    width: 100%;
+  }
+
+  nav .logo {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-left: -2.5rem;
+  }
+
+  nav ul {
+    list-style-type: none;
+  }
+
+  nav ul a {
+    text-decoration: none;
+    color: var(--content);
+  }
+
+  nav li {
+    display: inline;
+    margin: 1px;
+  }
+
+  .active {
+    background-color: rgb(38, 38, 38);
+    padding: 5px;
+  }
+
+  /* header */
+  header .heading {
+    color: var(--content);
+    font-size: 40px;
+    font-family: "Prompt", sans-serif;
+    text-shadow: 4px 1px 2px var(--shadow);
+    letter-spacing: 3px;
+    margin-top: 40px;
+    margin-left: 4rem;
+  }
+
+  /* form */
+
+  fieldset {
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+
+  fieldset form {
+    background-color: var(--formColor);
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 200px;
+  }
+
+  fieldset form .form-content {
+    color: var(--content);
+    font-size: 15px;
+  }
+
+  fieldset form input,
+  fieldset form select {
+    border-radius: 5px;
+    border: none;
+    height: 20px;
+  }
+
+  fieldset form .form-button {
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+  }
+
+  /* Footer */
+  footer {
+    background-color: var(--footer);
+    color: white;
+    padding: 10px;
+    width: 100%;
+  }
+  footer span {
+    font-weight: 800;
+    font-size: 30px;
+  }
+
+  footer ul {
+    list-style-type: none;
+  }
+
+  footer li {
+    display: inline;
+    margin: 20px;
+  }
+}

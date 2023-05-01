@@ -1,0 +1,24 @@
+:root {
+  --content: rgb(238, 235, 235);
+  --bg: rgb(16, 16, 16);
+}
+
+body {
+  color: var(--content);
+  background-color: var(--bg);
+  height: auto;
+}
+
+header {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header .response {
+  font-size: 45px;
+}
