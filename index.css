@@ -28,6 +28,8 @@ body {
   background-color: var(--primary);
   color: var(--content);
   height: auto;
+  margin-left: -2px;
+  margin-top: -1px;
 }
 
 /* Navbar */
@@ -106,12 +108,14 @@ section .about-video {
 
 section > article > .about-content {
   font-size: 35px;
+  margin-left: 15px;
 }
 
 section > .header {
   font-size: 55px;
   font-family: "Prompt", sans-serif;
   text-shadow: 3px 2px 3px var(--shadow);
+  margin-left: 15px;
 }
 
 /* customer */
@@ -124,12 +128,9 @@ section .customer-video {
 
 section > article > .customer-content {
   font-size: 35px;
+  margin-left: 15px;
 }
 
-section > .header {
-  font-size: 55px;
-  font-family: "Prompt", sans-serif;
-}
 
 /* happy-customer */
 
@@ -141,12 +142,10 @@ section .happy-customer-video {
 
 section > article > .happy-customer-content {
   font-size: 35px;
+  margin-left: 15px;
 }
 
-section > .header {
-  font-size: 55px;
-  font-family: "Prompt", sans-serif;
-}
+
 /* Footer */
 footer {
   background-color: var(--footer);
